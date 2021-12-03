@@ -1,0 +1,9 @@
+.box
+{
+  display: flex;
+}
+
+.distance
+{
+  padding-left: 10px;
+}

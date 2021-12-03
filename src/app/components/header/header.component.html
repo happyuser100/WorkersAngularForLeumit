@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button> -->
+    <h1>User Management</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'">Home </a>
+      <a mat-button [routerLink]="'/view-worker'">View Worker</a>
+      <a mat-button [routerLink]="'/Edit-worker'">Edit Worker</a>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <span style="font-size: 12px;">User Management helps you easily manage your users</span>
+    </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,40 @@
+<!-- <div class="container"> -->
+
+  <div class="row mt-1 mb-1 pt-1 pb-1">
+    <div class="col-md-12">
+      <h2 class="text-left">Users List</h2>
+    </div>
+  </div>
+  <div *ngFor="let workerItem of workers">
+    <div class="row mt-1 mb-1 pt-1 pb-1 border-primary">
+      <div class="col-md-4">
+        <div>
+          <span class="text-muted font-weight-bold">Name:</span>
+          <span class="text-muted font-weight-bold">{{workerItem.WorkerName}}</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <span class="text-muted font-weight-bold">Salary:</span>
+          <span class="text-muted font-weight-bold">{{workerItem.WorkerSalary}}</span>
+        </div>
+      </div>
+      <div class="col-md-4 box">
+        <div class="pr-1">
+          <button  type="button" class="btn btn-primary" (click)="showdetails(workerItem.WorkerId)" style="font-size:16px">
+            Show
+          </button>
+        </div>
+
+        <div class="pr-1 distance">
+          <button  type="button" class="btn btn-primary" (click)="editworker(workerItem)" style="font-size:16px">
+            Edit
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+<!-- </div> -->

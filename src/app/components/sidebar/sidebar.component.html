@@ -1,0 +1,31 @@
+<mat-nav-list>
+  <a mat-list-item [routerLink]="'/home'"> Home </a>
+  <a mat-list-item [routerLink]="'/view-worker'">View Worker</a>
+  <a mat-list-item [routerLink]="'/edit-worker'">Edit Worker</a>
+</mat-nav-list>
+
+<!-- <ul>
+
+  <li><a href="javascript:void(0)" [routerLink]="['/home']">home</a></li>
+  <li><a href="javascript:void(0)" [routerLink]="['/contact']">contact</a></li>
+
+</ul> -->
+
+<!-- <mat-sidenav-container>
+  <mat-sidenav mode="side" #sidenav opened="true">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-list-item [routerLink]="'/create-account'"> Create Account </a>
+      <a mat-list-item [routerLink]="'/contacts'"> Contacts </a>
+      <a mat-list-item [routerLink]="'/create-contact'"> Create Contact </a>
+      <a mat-list-item [routerLink]="'/activities'"> Activities </a>
+      <a mat-list-item [routerLink]="'/create-activity'"> Create Activity </a>
+      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+        <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
