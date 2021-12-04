@@ -42,8 +42,6 @@ export class WorkersListComponent implements OnInit {
     window.localStorage.removeItem('viewWorkerId');
     window.localStorage.setItem('viewWorkerId', id.toString());
     this.router.navigate(['/view-worker']);
-    //this.router.navigate(['/view-worker']);
-    //this.router.navigate(['/orders', id]);
   }
 
   editworker(workerEntity: WorkerEntity) {
