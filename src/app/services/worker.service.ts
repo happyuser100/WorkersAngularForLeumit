@@ -44,6 +44,19 @@ export class WorkerService {
       );
   }
 
+  getworkerByIdFake(WorkerId: number)
+  {
+    return of(this.mockworkerEntityList.find(x=> x.WorkerId == WorkerId));
+  }
+
+  updateworker(workerEntity: WorkerEntity)
+  {
+    return this.httpClient.post(`${this.baseURL}/Workers/Updateworker`, workerEntity)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
   handleError = (error: any) => {
     let errorMessage = '';
     let errorMessageSnack = '';

@@ -1,1 +1,45 @@
-<p>worker-edit works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-left">Edit Worker</h2>
+      <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+        <div class="hidden">
+          <input type="hidden" formControlName="WorkerId" placeholder="" name="WorkerId" class="form-control" id="WorkerId">
+        </div>
+
+        <div class="form-group">
+          <span class='red'>*</span>
+          <label for="firstName">Worker Name:</label>
+          <input required formControlName="WorkerName" placeholder="" name="WorkerName" class="form-control" id="WorkerName">
+        </div>
+
+        <div class="form-group">
+            <span class='red'>*</span>
+          <label for="lastName">Worker Number:</label>
+          <input required formControlName="WorkerNumber" placeholder="" name="WorkerNumber" class="form-control" id="WorkerNumber">
+        </div>
+
+        <div class="form-group">
+            <span class='red'>*</span>
+          <label for="phone">Worker Phone:</label>
+          <input required type="tel" formControlName="WorkerPhone" placeholder="" name="WorkerPhone" class="form-control" id="WorkerPhone">
+        </div>
+
+        <div class="form-group">
+            <span class='red'>*</span>
+          <label for="email">Worker Email:</label>
+          <input required type="email" formControlName="WorkerEmail" placeholder="" name="WorkerEmail" class="form-control" id="WorkerEmail">
+        </div>
+
+        <div class="form-group">
+            <span class='red'>*</span>
+          <label for="WorkerSalary">Salary:</label>
+          <input required type="url" formControlName="WorkerSalary" placeholder="" name="WorkerSalary" class="form-control" id="WorkerSalary">
+        </div>
+
+        <button [disabled]="editForm.invalid" class="btn btn-success">Edit</button>
+      </form>
+    </div>
+
+  </div>
+</div>

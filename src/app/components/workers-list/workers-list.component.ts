@@ -48,8 +48,8 @@ export class WorkersListComponent implements OnInit {
 
   editworker(workerEntity: WorkerEntity) {
     debugger
-    window.localStorage.removeItem('editWorkerId');
-    window.localStorage.setItem('editWorkerId', workerEntity.WorkerId.toString());
+    window.localStorage.removeItem('viewWorkerId');
+    window.localStorage.setItem('viewWorkerId', workerEntity.WorkerId.toString());
     this.router.navigate(['/edit-worker']);
   }
 }
